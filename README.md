@@ -1,11 +1,12 @@
 # LARAVEL COMMON
+
 this package provide common laravel functionality used to begin a project.
 
 ## Installation
+
 ```bash
 composer require pointdeb/laravel-common
 ```
-
 
 ## VALIDATORS:
 
@@ -18,12 +19,15 @@ public function boot()
     \Pointdeb\LaravelCommon\Validators\HttpValidator::boot();
 }
 ```
-
 ## ETAG
-
-Lumen:
-in app.php register the middleware
-
+* Laravel: in Kernel.php register the middleware
+```php
+protected $middleware = [
+        ...
+        \App\Http\Middleware\Etag::class,
+    ];
+```
+* Lumen: in app.php register the middleware
 ```php
 $app->middleware([
     ...
