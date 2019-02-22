@@ -1,0 +1,39 @@
+{
+    "name": "pointdeb/laravel-common",
+    "type": "library",
+    "description": "Common packages to start laravel app.",
+    "keywords": [
+        "framework",
+        "laravel",
+        "pointdeb",
+        "common",
+        "validators",
+        "etag",
+        "cache"
+    ],
+    "support": {
+        "issues": "https://github.com/pointdeb/laravel-common/issues",
+        "source": "https://github.com/pointdeb/laravel-common"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephano Romain",
+            "email": "stephano.romain@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pointdeb\\LaravelCommon\\": "\\src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
