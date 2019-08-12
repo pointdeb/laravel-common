@@ -9,7 +9,7 @@ class HttpValidator
     {
         Validator::extend('unique_not_me', function ($attribute, $value, $params) {
             $table = $params[0];
-            $column_id = $params[2] ?? 'id';
+            $column_id = $params[1] ?? 'id';
             $id = 0;
             if (isset(Input::all()[$column_id])) {
                 $id = Input::all()[$column_id];
